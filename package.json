@@ -1,7 +1,7 @@
 {
-  "name": "vodon-pro",
-  "version": "1.9.5",
-  "description": "The synchronised VOD review tool",
+  "name": "yorkie-vodon-pro",
+  "version": "0.0.1",
+  "description": "vodon-pro multiplayer project using yorkie",
   "scripts": {
     "build": "concurrently \"npm run build:main\" \"npm run build:renderer\"",
     "build:main": "cross-env NODE_ENV=production TS_NODE_TRANSPILE_ONLY=true webpack --config ./.erb/configs/webpack.config.main.prod.ts",
@@ -101,10 +101,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Rodeoclash/vodon-pro.git"
+    "url": "git+https://github.com/krapi0314/yorkie-vodon-pro.git"
   },
   "author": {
-    "name": "Samuel Richardson",
+    "name": "Samuel Richardson, krapi0314",
     "email": "sam@richardson.co.nz",
     "url": "https://www.richardson.co.nz"
   },
@@ -115,7 +115,9 @@
   },
   "keywords": [
     "video",
-    "esports"
+    "esports",
+    "yorkie",
+    "yorkie-js-sdk"
   ],
   "homepage": "https://github.com/Rodeoclash/vodon-pro/blob/main/README.md",
   "jest": {
@@ -246,7 +248,9 @@
     "tabler-icons-react": "^1.45.0",
     "use-pan-and-zoom": "^0.6.5",
     "uuid": "^8.3.2",
-    "zustand": "^3.7.1"
+    "zustand": "^3.7.1",
+    "@krapi0314/tldraw": "1.20.3",
+    "yorkie-js-sdk": "^0.2.15"
   },
   "devEngines": {
     "node": ">=16.x",
